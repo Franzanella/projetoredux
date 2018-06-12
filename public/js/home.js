@@ -1,4 +1,4 @@
-//VALIDA«√O DO FORMUL¡RIO
+//VALIDA√á√ÉO DO FORMUL√ÅRIO
 
 function validar(){
 	
@@ -48,7 +48,7 @@ function validar(){
     }
 	
 	if (comentario ==""){
-       alert("Erro, campo n„o preenchido");
+       alert("Erro, campo nÔøΩo preenchido");
        return false;
     }
 
