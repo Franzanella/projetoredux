@@ -1,4 +1,4 @@
-//VALIDAÇÃO DO FORMULÁRIO
+//VALIDAÇÃO DO FORMULÁRIO EM JAVASCRIPT
 
 function validar(){
 	
