@@ -1,3 +1,4 @@
+//Adicionando o to do list do redux
 import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
