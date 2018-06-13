@@ -9,48 +9,43 @@
    
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-
 </head>
 <body>
-    
      <div class="root"></div>
      
 <!-- MENU -->
-		
 		<ul>
-	  <a href="#home"></a>><img div="logo" src="imagens/logo.png" alt="Logo"></a>
-      <li><a href="#home">HOME</a></li>
-      <li><a href="#jobs">EMPREGO</a></li>
-      <li><a href="#tips">DICAS</a></li>
-	  <li><a href="#about">SOBRE</a></li>
-      <li><a href="#tellus">CONTATO</a></li>
+	      <a href="#home"><img div="logo" src="imagens/logo.png" alt="Logo"></a>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#jobs">EMPREGO</a></li>
+          <li><a href="#tips">DICAS</a></li>
+	      <li><a href="#about">SOBRE</a></li>
+          <li><a href="#tellus">CONTATO</a></li>
 		</ul>
-	
-
 <!-- FIM DO MENU -->
 
 
 <!-- PÁG INICIAL/HOME -->  
 <!--    <div id="root"></div> -->
     <section id="home">
-        
         <img src="imagens/2.jpg" alt="Grupo Cumprimentando">
-        <label for="Search">
-            <input type="text" name="Search"></input>
-        </label>
         <!-- <img src="1.jpg" alt="Engenheiro Feliz">
         <img src="imagens/2.jpg" alt="Grupo Cumprimentando">
         <img src="imagens/3.jpg" alt="Homem Com Gravata">
         <img src="imagens/4.jpg" alt="Computador, Café e Dream">
         <img src="imagens/5.jpg" alt="Grupo Conversando">
         <img src="imagens/6.jpg" alt="Mesa com Pessoas"> -->
-        
     </section>
 <!-- FIM PÁG INICIAL/HOME -->
-    
+
     
 <!-- VAGAS/TRABALHO -->    
     <section id="jobs">
+        <div id="pesquisa">
+            <label for="Search">
+                <input type="text" name="Search"></input>
+            </label>
+        </div>
        
         <article class="aOne"> 
             <h3>Vagas para TI</h3>
@@ -100,13 +95,12 @@
     <section id="tellus">
         <h2>DÚVIDAS</h2>
         <form name="formuser" method="post" action="scripts/envia.php">
-        <br><p>
-		
-				<label for="nome">Nome
+        <br>
+        <p>
+			<label for="nome">Nome
 				    <input type="text" name="nome" id="nome">
 			</label>
 	
-        
             <label for="sobrenome">Sobrenome
                 <input type="text" name="sobrenome" id="sobrenome">
             </label>
@@ -128,13 +122,10 @@
             </label>
         </p>
 		<input id="btn" type="submit" onclick="return validar()">
-       
     </form>
     </section>
 <!-- FIM FORMULARIO -->    
-   
-   
-    
+
     <footer>
         &copy; 2018 Fran's & Tais's Development
     </footer>
