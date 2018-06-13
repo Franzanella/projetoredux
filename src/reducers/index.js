@@ -1,8 +1,6 @@
-import { combineReducers } from 'redux'
-import todos from './todos'
-import visibilityFilter from './visibilityFilter'
+import { clickReducer } from './clickReducer';
+import { combineReducers } from 'redux';
 
-export default combineReducers({
-  todos,
-  visibilityFilter
-})
+export const Reducers = combineReducers({
+  clickState: clickReducer
+});
