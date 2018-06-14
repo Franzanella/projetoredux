@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- PÁGINA QUE VAI EXIBIR O TOKEN -->
+<html>
+    <head>
+        <script>
+            function pegarCodigo(){
+                var url = new URL(window.location.href); //criar url, location: url atual da página
+                var c = url.searchParams.get("code"); //code pede na documentação do instagram dev
+                var div = document.getElementById("codigo");
+                div.innerHTML = c;
+            }
+            window.onload = pegarCodigo;
+        </script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="codigo"></div>
+    </body>
+</html>

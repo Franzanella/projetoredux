@@ -2,65 +2,52 @@
 <html lang="pt-br">
 <head>
     <title>SearchingJobs</title>
-    <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#ffffff">
-    
-    <script type="text/javascript" src="js/home.js"></script>
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-
-
-
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#ffffff">
+                        <!-- SCRIPTS JS -->
+        <script type="text/javascript" src="js/home.js"></script>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+                        <!-- FOLHA DE ESTILOS -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+                        <!-- FRAMEWORK -->
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
 </head>
 <body>
-    
-   
-    
-    
-     
-     
 <!-- MENU -->
-		
-		<ul>
+	<ul>
 	  <img div="logo" src="imagens/logo1.png" alt="Logo">
       <li><a href="#home">HOME</a></li>
       <li><a href="#jobs">EMPREGO</a></li>
       <li><a href="#tips">DICAS</a></li>
 	  <li><a href="#about">SOBRE</a></li>
       <li><a href="#tellus">CONTATO</a></li>
-      </ul>
-	
-
+  </ul>
 <!-- FIM DO MENU -->
    
 
 <!-- PÁG INICIAL/HOME -->
-    
-    
     <section id="home">
-        
        <img src="imagens/2.jpg" alt="Grupo Cumprimentando">
-        
-       
-        
+    
         <!-- <img src="1.jpg" alt="Engenheiro Feliz">
         <img src="imagens/2.jpg" alt="Grupo Cumprimentando">
         <img src="imagens/3.jpg" alt="Homem Com Gravata">
         <img src="imagens/4.jpg" alt="Computador, Café e Dream">
         <img src="imagens/5.jpg" alt="Grupo Conversando">
         <img src="imagens/6.jpg" alt="Mesa com Pessoas"> -->
-        
     </section>
 <!-- FIM PÁG INICIAL/HOME -->
     
     
 <!-- VAGAS/TRABALHO -->    
     <section id="jobs">
+        <!-- REDUX -->
        <div id="root"></div> 
+       <!-- Login com botão do Linkedin -->
+        <script type="in/Login"></script>
         <article class="aOne"> 
             <h3>Vagas para TI</h3>
             <img src="imagens/ti.jpg" alt="Programador" width="220" height="150">
@@ -81,7 +68,6 @@
             <p>Para todas áreas do Direito. Fique por dentro
             também de todas as novidades.</p>
         </article>
-        
     </section>
 <!-- FIM VAGAS/TRABALHOS-->
     
@@ -109,44 +95,40 @@
     <section id="tellus">
         <h2>DÚVIDAS</h2>
         <form name="formuser" method="post" action="scripts/envia.php">
-        <br><p>
-		
+        <br>
+            <p>
 				<label for="nome">Nome
 				    <input type="text" name="nome" id="nome">
-			</label>
+			    </label>
 	
-        
-            <label for="sobrenome">Sobrenome
-                <input type="text" name="sobrenome" id="sobrenome">
-            </label>
+                <label for="sobrenome">Sobrenome
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </label>
         </p>
         
         <p>
-            <label for="idade">Idade
-                <input type="number" id="idade" name="idade"/>
-            </label>
+                <label for="idade">Idade
+                    <input type="number" id="idade" name="idade"/>
+                </label>
         
-            <label for="email">E-mail
-                <input type="text" id="email" name="email" maxlength="50" placeholder="exemplo@exemplo.com"/>
-            </label>
+                <label for="email">E-mail
+                    <input type="text" id="email" name="email" maxlength="50" placeholder="exemplo@exemplo.com"/>
+                </label>
         </p>
         
         <p>
-            <label for="comentario">Comentário<br>
-                <textarea type="textarea" id="comentario" name="comentario" rows="5" cols="50"></textarea>
-            </label>
+                <label for="comentario">Comentário<br>
+                    <textarea type="textarea" id="comentario" name="comentario" rows="5" cols="50"></textarea>
+                </label>
         </p>
-		<input id="btn" type="submit" onclick="return validar()">
+		    <input id="btn" type="submit" onclick="return validar()">
        
     </form>
     </section>
 <!-- FIM FORMULARIO -->    
-   
-   
     
     <footer>
         &copy; 2018 Fran's & Tais's Development
-        
     </footer>
 </body>
 </html>
