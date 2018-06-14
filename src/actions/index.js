@@ -1,4 +1,5 @@
 //Actions
+<<<<<<< HEAD
 let nextTodoId = 0
 export const addTodo = text => ({
   type: 'ADD_TODO',
@@ -21,3 +22,10 @@ export const VisibilityFilters = {
   SHOW_COMPLETED: 'SHOW_COMPLETED',
   SHOW_ACTIVE: 'SHOW_ACTIVE'
 }
+=======
+import { CLICK_UPDATE_VALUE } from './actionTypes';
+export const clickButton = value => ({
+  type: CLICK_UPDATE_VALUE,
+  newValue: value
+});
+>>>>>>> refs/remotes/origin/master

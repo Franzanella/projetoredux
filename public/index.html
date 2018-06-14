@@ -3,41 +3,37 @@
 <head>
     <title>SearchingJobs</title>
     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff">
+    
     <script type="text/javascript" src="js/home.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-   
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-
 </head>
 <body>
-    
-     <div class="root"></div>
-     
+
 <!-- MENU -->
-		
-		<ul>
+    <ul>
 	  <img div="logo" src="imagens/logo1.png" alt="Logo">
       <li><a href="#home">HOME</a></li>
       <li><a href="#jobs">EMPREGO</a></li>
       <li><a href="#tips">DICAS</a></li>
 	  <li><a href="#about">SOBRE</a></li>
       <li><a href="#tellus">CONTATO</a></li>
-		</ul>
-	
-
+    </ul>
 <!-- FIM DO MENU -->
+   
 
-
-<!-- PÁG INICIAL/HOME -->  
-<!--    <div id="root"></div> -->
+<!-- PÁG INICIAL/HOME -->
     <section id="home">
-        
-        <img src="imagens/2.jpg" alt="Grupo Cumprimentando">
+
+       <img src="imagens/2.jpg" alt="Grupo Cumprimentando">
         <label for="Search">
-            <input type="text" name="Search"></input>
-        </label>
+            <input type="text" name="Search"/>
+        </label> 
+        
         <!-- <img src="1.jpg" alt="Engenheiro Feliz">
         <img src="imagens/2.jpg" alt="Grupo Cumprimentando">
         <img src="imagens/3.jpg" alt="Homem Com Gravata">
@@ -51,7 +47,7 @@
     
 <!-- VAGAS/TRABALHO -->    
     <section id="jobs">
-       
+    <div id="root"></div> 
         <article class="aOne"> 
             <h3>Vagas para TI</h3>
             <img src="imagens/ti.jpg" alt="Programador" width="220" height="150">
@@ -100,13 +96,12 @@
     <section id="tellus">
         <h2>DÚVIDAS</h2>
         <form name="formuser" method="post" action="scripts/envia.php">
-        <br><p>
-		
-				<label for="nome">Nome
+        <br>
+        <p>
+			<label for="nome">Nome
 				    <input type="text" name="nome" id="nome">
 			</label>
 	
-        
             <label for="sobrenome">Sobrenome
                 <input type="text" name="sobrenome" id="sobrenome">
             </label>
@@ -132,11 +127,10 @@
     </form>
     </section>
 <!-- FIM FORMULARIO -->    
-   
-   
     
     <footer>
         &copy; 2018 Fran's & Tais's Development
+        <p>Jatatstgyauyshs</p>
     </footer>
 </body>
 </html>

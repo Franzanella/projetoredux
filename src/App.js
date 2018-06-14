@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { clickButton } from './action';
+import { clickButton } from './actions';
 import './App.css';
 
 class App extends Component {
