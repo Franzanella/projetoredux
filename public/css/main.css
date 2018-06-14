@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 *{
-    margin-top: 0; 
-    padding: 0;
+    margin-top: 0;
 }
 
 a{
@@ -112,28 +111,12 @@ form{
     height: 8%;
 }
 
-.divimg {
- 
-  width: 300px;
-  display: table;
-  
+#logo{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.divimg ul {
-  padding: 0 200px;
-  
-}
-
-.divimg ul li {
-  display: inline;
-}
-
-.divimg img {
-  float: left; 
-  
-}
-
-
 
 
 
