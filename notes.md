@@ -41,13 +41,29 @@ curl -X POST -d 'client_id=77yqgmwosyx90h' \
     https://www.linkedin.com/oauth/v2/accessToken
     
 ##### Access retornada:
-
 {"access_token":"AQX8GNwkEcz72uG9pat2ETZb3uI1HL3IXwCsVk3pRtUBAJNtzhG4FDeKZOkYP8YTYDk6BlGBTKp1pxQqUV0xeES2DdceMYfJ9S4AsLYkgHRdBHCVC5p6SYMcYj7GLZu0GJabCUgR_C_M-naCL3S04Dp11reGyTScq-31m2yExnOKlIeNbAYih3wDkfi9v0GjRYC0DFv82k9OOQOhDM1-U0QhfFBf_lPC9mUgjq952rw8h8RoWeBDXas43PFIW9ViS8xri7SvDxgimEOpBAB6gbKuFh-eNiSZYOHJLz-5CyGNeGq_X9_wZYuk6z-VvlMvf3fTPCUbiz_tv3mn2KkbzISrpQKfDQ","expires_in":5183999}
 
 #### Solicitação:
-
 GET /v1/people/~ HTTP/1.1
 Host: api.linkedin.com
 Connection: Keep-Alive
 Authorization: Bearer AQXdSP_W41_UPs5ioT_t8HESyODB4FqbkJ8LrV_5mff4gPODzOYR
 
+#### JSON: 
+https://api.linkedin.com/v1/people/~?oauth2_access_token=AQX8GNwkEcz72uG9pat2ETZb3uI1HL3IXwCsVk3pRtUBAJNtzhG4FDeKZOkYP8YTYDk6BlGBTKp1pxQqUV0xeES2DdceMYfJ9S4AsLYkgHRdBHCVC5p6SYMcYj7GLZu0GJabCUgR_C_M-naCL3S04Dp11reGyTScq-31m2yExnOKlIeNbAYih3wDkfi9v0GjRYC0DFv82k9OOQOhDM1-U0QhfFBf_lPC9mUgjq952rw8h8RoWeBDXas43PFIW9ViS8xri7SvDxgimEOpBAB6gbKuFh-eNiSZYOHJLz-5CyGNeGq_X9_wZYuk6z-VvlMvf3fTPCUbiz_tv3mn2KkbzISrpQKfDQ&format=json 
+
+HTTP/1.1
+GET /v1/people/~ HTTP/1.1
+Host: api.linkedin.com
+Connection: Keep-Alive
+Authorization: Bearer AQXdSP_W41_UPs5ioT_t8HESyODB4FqbkJ8LrV_5mff4gPODzOYR 
+
+####
+
+{
+  "firstName": "Tais",
+  "headline": "Bachelor of Technology (B.Tech.) | Fatec Baixada Santista Rubens Lara",
+  "id": "ruCfh_vkZB",
+  "lastName": "Cristina da Silva",
+  "siteStandardProfileRequest": {"url": "https://www.linkedin.com/profile/view?id=AAoAACJTdVIBdcHmNl12XDsTjyyFulnsaR_oo1o&authType=name&authToken=FKew&trk=api*a5148583*s5065703*"}
+}
