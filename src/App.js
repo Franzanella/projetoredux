@@ -27,7 +27,7 @@ class App extends Component {
         value={this.state.inputValue}
         />
         <button onClick={() => clickButton(this.state.inputValue)}>
-          Click me!
+          Ok!
         </button>
         <h1>{newValue}</h1>
       </div>

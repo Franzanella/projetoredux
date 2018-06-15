@@ -1,4 +1,4 @@
-//VALIDAÇÃO DO FORMULÁRIO EM JAVASCRIPT
+//VALIDAÇÃO DO FORMULÁRIO EM JAVASCRIPT 
 
 function validar(){
 	
@@ -48,7 +48,7 @@ function validar(){
     }
 	
 	if (comentario ==""){
-       alert("Erro, campo n�o preenchido");
+       alert("Erro, campo não preenchido");
        return false;
     }
 
