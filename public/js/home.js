@@ -1,14 +1,11 @@
 //VALIDAÇÃO DO FORMULÁRIO EM JAVASCRIPT
 
 function validar(){
-	
-	
 	var nome = formuser.nome.value;
 	var sobrenome = formuser.sobrenome.value;
 	var idade = formuser.idade.value;
 	var email = formuser.email.value;
 	var comentario = formuser.comentario.value;
-	
 	
 	if(nome == ""){
 		alert('Preencha o campo nome.');
@@ -34,26 +31,27 @@ function validar(){
 		return false;
 	}
 
-	
 	if(comentario == ""){
 		alert("Por favor, comente algo");
 		formuser.comentario.focus();
 		return false;
 	}
 	
-
 	if (comentario.length>150){
        alert("Texto Muito Grande");
 	   return false;
     }
 	
 	if (comentario ==""){
-       alert("Erro, campo n�o preenchido");
+       alert("Erro, campo não preenchido");
        return false;
     }
-
 }
 
-
-
-
+var $doc = $('html, body');
+$('.scrollSuave').click(function() {
+    $doc.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
